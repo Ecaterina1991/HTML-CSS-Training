@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Basic Layout</title>
+    <title>Layout Example</title>
 
     <style>
+
       body {
-        width: 750px;
-        margin: 20px auto;
+        width: 960px;
+        margin: 20px auto; 
       }
 
       header {
@@ -20,32 +21,37 @@
         border-bottom: 1px solid gray;
       }
 
-      footer {
-        padding: 16px 0 16px 0;
-        border-top: 1px solid gray;
-      }
-
       a {
         margin-right: 6px;
       }
 
       section {
-        display: inline-block;
-        width: 500px;
+        float: left;
+        width: 600px;
         padding: 0 8px 0 0;
         border-right: 1px solid gray;
+        box-sizing: border-box;
         margin-bottom: 8px;
       }
 
       aside {
-        display: inline-block;
-        width: 150px;
-        vertical-align: top;
+        float: left;
+        width: 360px;
         padding: 0 0 0 8px;
+        vertical-align: top;
+        box-sizing: border-box;
       }
+
+      footer {
+        padding: 16px 0 16px 0;
+        border-top: 1px solid gray;
+        clear: left;
+      }
+
     </style>
   </head>
-
+  <body>
+    
   <body>
     <header>
       <img src="logo.gif" alt="our company logo" />
