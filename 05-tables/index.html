@@ -3,6 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <title>Tables</title>
+
+    <style>
+      .table {
+        width: 40%;
+        margin: 0 auto;
+        border-collapse: collapse;
+        border: 1px solid black;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
   </head>
   <body>
     <!-- <table border="1">
@@ -58,7 +72,7 @@
     </tr>
   </table> -->
 
-    <table>
+    <!-- <table>
       <thead>
         <tr>
           <td>header cell</td>
@@ -81,6 +95,55 @@
         </tr>
         <tr>
           <td>body cell</td>
+        </tr>
+      </tbody>
+    </table> -->
+
+    <table class="table">
+      <tr id="heading">
+        <th>Primul titlu</th>
+        <th>Al doilea titlu</th>
+        <th>Al treilea titlu</th>
+      </tr>
+
+      <tr class="odd">
+        <td colspan="2">in</td>
+        <td>when</td>
+        <td>then</td>
+      </tr>
+
+      <tr class="even">
+        <td>of</td>
+        <td>from</td>
+        <td rowspan="2">here</td>
+      </tr>
+      <tr class="odd">
+        <td>super</td>
+        <td>under</td>
+        <td>above</td>
+      </tr>
+    </table>
+
+    <table border="1px">
+      <thead>
+        <tr>
+          <td>header</td>
+          <td>header</td>
+          <td>header</td>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td>footer</td>
+          <td>footer</td>
+          <td>footer</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>body</td>
+          <td>body</td>
+          <td>body</td>
         </tr>
       </tbody>
     </table>
