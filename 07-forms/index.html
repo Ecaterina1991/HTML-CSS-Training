@@ -72,7 +72,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, non quo! Ducimus
       </select>
     </form> -->
 
-    <form
+    <!-- <form
       action="script.php"
       method="POST"
       enctype="multipart/form-data"
@@ -93,6 +93,28 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, non quo! Ducimus
         <label for="phone">Phone:</label><br />
         <input type="text" name="phone" id="phone" />
       </fieldset>
-    </form>
+    </form> -->
+
+    <!-- <select name="program" id="program" multiple="multiple">
+      <option value="JavaScript">JavaScript</option>
+      <option value="PHP" selected="selected">PHP</option>
+      <option value="C++">C++</option>
+    </select> -->
+
+    <!-- Am creat un control derulant drop-down in HTML cu ajutorul tagurilor select, option si optgroup. Am grupat doua categorii diferite de infomatii cu optgroup adaugandu-le denumiri cu atributul label -->
+
+    <select name="hobby" id="hobby" multiple="multiple">
+      <optgroup label="Distractie">
+        <option value="carti" selected="selected">Carti</option>
+        <option value="filme">Filme</option>
+        <option value="inot">Inot</option>
+      </optgroup>
+
+      <optgroup label="Pasiuni">
+        <option value="cibernetica">Cibernetica</option>
+        <option value="it">IT</option>
+        <option value="programare" selected="selected">Programare</option>
+      </optgroup>
+    </select>
   </body>
 </html>
