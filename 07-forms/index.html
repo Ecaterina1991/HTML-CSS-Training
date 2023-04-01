@@ -28,6 +28,8 @@
       <label for="Ukraine">Ukraine</label>
     </form> -->
 
+    <!-- get foloseste antetul cererii http (protocol/schita). post foloseste corpul cererii http. la post mai apare atributul enctype care defineste formularul datelor transmise -->
+
     <!-- <form
       action="script.php"
       method="POST"
@@ -116,5 +118,14 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, non quo! Ducimus
         <option value="programare" selected="selected">Programare</option>
       </optgroup>
     </select>
+
+    <form
+      action="script.php"
+      method="POST"
+      enctype="application/x-www-form-urlencoded"
+    >
+      <textarea name="text" id="text" cols="30" rows="10"></textarea><br />
+      <button><submit name="submit" value="Submit">Submit</submit></button>
+    </form>
   </body>
 </html>
